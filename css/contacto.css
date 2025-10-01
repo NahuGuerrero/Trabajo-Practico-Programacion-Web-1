@@ -1,0 +1,137 @@
+.contenedor {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+
+.contenedor-contacto {
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: auto;
+    margin: 0;
+    padding: 0;
+}
+
+
+.contenedor-contacto h1{
+    font-size: 5vw;
+}
+
+.contenedor-contacto_principal {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.contenedor-contacto_datos {
+    margin: 3em 10em;
+    margin-top: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    width: 15%;
+    height: 72%;
+    box-shadow: 0 0 20px rgba(184, 174, 174, 0.2);
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+
+
+
+.contenedor-mensaje{
+    margin-left: 0em;
+    margin-right: 10em;
+    margin-top: 5em;
+    margin-bottom: 5em;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 20px;
+    box-shadow: 0 0 20px rgba(184, 174, 174, 0.2);
+    border-radius: 20px;
+    padding: 20px;
+
+}
+
+input,
+textarea {
+    width: 95%;
+    margin-bottom: 20px;
+    padding: 7px;
+    box-sizing: border-box;
+    font-size: 17px;
+    border-radius: 10px;
+    margin: 0;
+}
+
+  .boton-enviar{
+    background-color: #007bff;
+    border-radius: 0.5em;
+    margin-bottom: 0.5em;
+    font-size: 1em;
+    width: 95%;
+  }
+
+
+.google-maps
+{
+    width: 100%;
+    height: 70vh;
+}
+
+
+@media screen and (max-width: 30em) {
+
+    h1 {
+        font-size: 2em;
+    }
+
+
+    .contenedor-contacto_principal {
+  
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .contenedor-contacto_datos {
+        margin: 1em;
+        align-items: center;
+        width: 70%;
+    }
+
+    .contenedor-mensaje {
+        width: 70%;
+        margin: 0;
+
+    }
+
+    input,
+    textarea {
+        font-size: 15px;
+    }
+
+
+}
+@media screen and (min-width: 50em) {
+ 
+
+  .contenedor-contacto_principal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 45%;
+    margin: 2rem;
+  }
+
+}
+
+

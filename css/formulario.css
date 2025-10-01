@@ -1,0 +1,323 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.5;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.nav-background {
+  background: #004085;
+  padding: 0.5rem 0;
+}
+.navegacion-principal {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  padding: 0 1rem;
+}
+
+.logo {
+  width: 10rem;
+  float: left;
+}
+
+.search {
+  position: relative;
+  flex: 1;
+  margin: 0 1rem;
+}
+
+.search-input {
+  width: 100%;
+  padding: 0.5rem 2rem 0.5rem 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 1rem;
+  padding: 0.5rem;
+}
+
+.search-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #007bff;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.inscripcion h1 {
+  margin-bottom: 1rem;
+}
+
+.alumnos-container {
+  margin-bottom: 2rem;
+}
+
+.Java {
+  border: 1px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+  background: #fafafa;
+}
+
+.barra_insc {
+  margin-bottom: 0.5rem;
+}
+
+.barra_insc-input,
+select {
+  width: 100%;
+  padding: 0.4rem;
+  border: 1px solid #bbb;
+  border-radius: 5px;
+}
+
+.barra_insc-input:focus,
+select:focus {
+  outline: 2px solid #4c8bf5;
+}
+
+h2 {
+  margin: 0.5rem 0;
+}
+
+.infomracion_cursos {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.fondo-negro-contenedor {
+  flex: 1;
+  min-width: 200px;
+}
+
+.fondo-negro {
+  background: #007bff;
+  color: white;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.desarrolladores {
+  flex: 2;
+  background: #555;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.fila {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.3rem 0;
+}
+
+.nombre--titulo, .dni--titulo {
+  font-weight: bold;
+}
+
+.social-icon img {
+  width: 32px;
+  margin-right: 0.5rem;
+}
+
+.medios-pago {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.imagen-pago {
+  width: 50px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .menu-horizontal {
+    display: none;
+  }
+
+
+}
+/* ========================
+   Celulares (<= 30em ~ 480px)
+   ======================== */
+@media screen and (max-width: 30em) {
+  body {
+    font-size: 70%; 
+  }
+
+  .navegacion-principal {
+    flex-direction: column;
+    align-items: center;
+    padding: 1em 0;
+  }
+
+  .search {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  .contenedor-contacto h1 {
+    font-size: 2em;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 90%;
+    margin: 1rem 0;
+  }
+
+
+  .imagen-pago {
+    width: 25%;
+  }
+}
+
+
+@media screen and (min-width: 60em) {
+  body {
+    font-size: 100%;
+  }
+
+  .navegacion-principal {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .search {
+    width: 60%;
+    margin: 0 2rem;
+  }
+
+  .giftcard-container {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .contenedor-contacto_principal {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .contenedor-contacto_datos,
+  .contenedor-mensaje {
+    width: 45%;
+    margin: 2rem;
+  }
+
+}
+
+
+h2 {
+    text-align: center;
+}
+.cursos-disponibles{
+display: flex;
+justify-content: space-around;
+}
+
+
+.tarjeta {
+  display: flex;
+  flex-direction: column;      
+  border: 0.1em solid #ccc;   
+  border-radius: 0.5em;
+  overflow: hidden;
+  width: 25%;                  
+  margin: 1em;                 
+  box-shadow: 0 0.3em 0.5em rgba(0,0,0,0.1);
+  background-color: white;
+}
+
+
+.curso-imagen {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+
+.curso-contenido {
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+
+.curso-titulo {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.curso-descipcion {
+  font-size: 1em;
+  color: #555;
+}
+
+.curso-boton {
+  display: inline-block;
+  text-align: center;
+  padding: 0.5em 1em;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 0.3em;
+  font-size: 1em;
+ ;
+}
+
+.curso-boton:hover {
+  background-color: #0056b3;
+}
+
+footer{
+    background-color: #d3d3d3;
+}
+
+.footer-contenedor{
+     display: flex;
+    justify-content: space-around;
+
+}
+
+.footer-social{
+    width: 20%;
+}
+
+.footer-menu{
+    width: 30%;
+}
+
+.footer-datos{
+    width: 30%;
+}
+
+footer ul{
+  list-style: none;       
+}
+
+footer a{
+    color:black;
+    text-decoration: none;  
+}
+
+.footer-social img{
+    width: 5%;
+    height: auto;
+}
